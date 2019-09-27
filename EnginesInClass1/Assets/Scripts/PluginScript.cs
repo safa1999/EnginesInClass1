@@ -12,8 +12,10 @@ public class PluginScript : MonoBehaviour
     [DllImport(DLL_NAME)]
     private static extern void savePos(float x, float y, float z);
 
+
     [DllImport(DLL_NAME)]
-    private static extern void loadPos(string file);
+    private static extern void loadPos(float x, float y, float z);
+
 
 
     [DllImport(DLL_NAME)]
@@ -28,8 +30,14 @@ public class PluginScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.M))
         {
             savePos(transform.position.x,transform.position.y,transform.position.z);
-            Debug.Log("this should theoretically save the position"); 
+            Debug.Log("Will save the position"); 
         }
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            loadPos(transform.position.x, transform.position.y, transform.position.z);
+            Debug.Log("Should load the position");
+        }
+
 
 
     }

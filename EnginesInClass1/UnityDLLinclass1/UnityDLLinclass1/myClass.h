@@ -7,6 +7,7 @@
 #include <fstream>
 #include <istream>
 #include <vector>
+#include <sstream>
 
 class PLUGIN_API MyClass
 {
