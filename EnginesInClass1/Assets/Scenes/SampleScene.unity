@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 1630337722}
   - component: {fileID: 1630337727}
   - component: {fileID: 1630337728}
+  - component: {fileID: 1630337729}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -367,7 +368,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1630337721}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -460,7 +461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f26f0998483c984480239cbdaa4388d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.3
+  speed: 5
 --- !u!114 &1630337728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -471,6 +472,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2084fc03f657f03408de4045712f7545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1630337729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630337721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18fe348cfa5ed3b4ca2351a45887d875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1667731988

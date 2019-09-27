@@ -15,6 +15,7 @@ public class boxMove : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.O))
         {
+            //just hardcoding where the box will go 
             transform.localPosition = new Vector3(2, 3, 4);
         }
     }

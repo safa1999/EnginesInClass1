@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float speed;
+    public float speed = 2;
     Vector3 rotation = new Vector3(); 
     // Start is called before the first frame update
     void Start()
@@ -15,10 +15,11 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //this code is from our GDW Project 
-        Vector3 dir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        rotation += new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        transform.position += dir * speed;
-        transform.rotation = Quaternion.Euler(-rotation.z, rotation.x, 0);
+        //code from GDW project
+        var x = Input.GetAxis("Horizontal");
+        var y = Input.GetAxis("Vertical");
+
+        transform.position += (Vector3.forward * speed) * y * Time.deltaTime;
+        transform.position += (Vector3.right * speed) * x * Time.deltaTime;
     }
 }
