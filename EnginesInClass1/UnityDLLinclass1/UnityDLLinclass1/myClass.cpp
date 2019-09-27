@@ -22,7 +22,6 @@ void MyClass::savePos(float x, float y, float z)
 	//}
 
 	std::ofstream myFile("assignment.txt");
-
 	if (myFile.is_open())
 	{
 		//should write the position on each axis on a seperate line
